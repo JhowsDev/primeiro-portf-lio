@@ -1,0 +1,41 @@
+.AboutMeContainer {
+    margin-left: 10%;
+    display: flex;
+    flex-direction: column;
+    max-width: 80%;
+    gap: 2.5rem;
+    position: relative;
+}
+
+.AboutMeTittle {
+    font-size: var(--font-size-t2);
+    font-weight: 600;
+}
+
+.AboutMetext {
+    font-size: var(--font-size-link-p );
+    line-height: 1.875rem;
+}
+
+@media (min-width: 800px) {
+    .AboutMeContainer{
+        max-width: 70%;
+        margin-left: 15%;
+    }
+}
+
+@media (min-width: 1030px) {
+    .AboutMeContainer{
+        flex-direction: row;
+        justify-content: space-between;
+        max-width: 70%;
+        margin-left: 15%;
+    }
+    .AboutMeTittle{
+        width: 30%;
+    }
+
+    .AboutMetext{
+        max-width: 70%;
+    }
+}

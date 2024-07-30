@@ -1,0 +1,55 @@
+.footerContainer {
+    margin-block: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    align-items: center;
+    justify-content: center;
+    max-width: 80%;
+    margin-left: 10%;
+    border-block: 1px solid var(--gray-50);
+    height: 17.8125rem;
+}
+
+.ContactDiv{
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.footerTitle{
+    font-size: var(--font-size-t2);
+    font-weight: 600;
+}
+
+.footerDiv {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+}
+
+.footerimg {
+    width: 1.1875rem;
+    height: 1.1875rem;
+    cursor: grab;
+}
+
+.FooterText{
+    font-size: var(--font-size-link-p);
+    text-align: center;
+    width: 80%;
+    line-height: 1.875rem;
+}
+
+@media (min-width: 800px) {
+    .footerContainer {
+        max-width: 70%;
+        margin-left: 15%;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .FooterText{
+        text-align: end;
+    }
+}

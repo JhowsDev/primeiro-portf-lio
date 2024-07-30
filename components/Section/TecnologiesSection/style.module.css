@@ -1,0 +1,32 @@
+.tecnologiesContainer {
+    margin-left: 10%;
+    display: flex;
+    flex-direction: column;
+    max-width: 80%;
+    gap: 2.5rem;
+}
+
+.tecnologiesTittle {
+    font-size: var(--font-size-t2);
+    font-weight: 600;
+}
+
+.tecnologiesList {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+
+@media (min-width: 800px) {
+    .tecnologiesContainer {
+        max-width: 70%;
+        margin-left: 15%;
+    }
+    .tecnologiesList {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+        justify-content: space-between;
+    }
+}

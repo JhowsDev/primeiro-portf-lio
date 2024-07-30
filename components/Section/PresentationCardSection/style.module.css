@@ -1,0 +1,63 @@
+.PresentationCardContainer {
+    margin-left: 10%;
+    display: flex;
+    flex-direction: column;
+    max-width: 80%;
+}
+
+.PresentationCardName{
+    font-size: var(--font-size-link-p);
+    color: var(--brand-color-1);
+    margin-bottom: 2.5rem;
+}
+
+.PresentationCardTittle {
+    font-size: var(--font-size-t1);
+    font-weight: 800;
+    line-height: 3.1875rem;
+}
+
+.PresentationCardtext {
+    margin-block: 4rem;
+    line-height: 1.875rem;
+}
+
+.PresentationCardButton{
+    background-color: var(--brand-color-1);
+    font-size: var(--font-size-label);
+    cursor: grab;
+    width: 7.1875rem;
+    height: 2.5rem;
+    border-radius: var(--button-radius);
+    color: var(--gray-50);
+    margin-bottom: 3rem;
+}
+
+.PresentationCardButton:hover{
+    background-color: var(--brand-color-2);
+}
+
+@media (min-width: 800px) {
+    .PresentationCardContainer{
+        flex-direction: row;
+        justify-content: space-between;
+        max-width: 70%;
+        margin-left: 15%;
+    }
+    .PresentationCardDiv {
+        box-sizing: border-box;
+        width: 40%;
+    }
+    .PresentationCardName{
+        margin-bottom: 1rem;
+    }
+    .PresentationCardtext{
+        margin-block: 2rem;
+    }
+    .PresentationCardButton {
+        margin-bottom: 0;
+    }
+    .PresentationCardImg {
+        width: 55%;
+    }
+}
